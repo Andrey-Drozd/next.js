@@ -1,8 +1,14 @@
+import Head from 'next/head'
 import MLink from "../components/MLink";
 
 const Index = () => {
     return (
         <>
+            <Head>
+                <meta keywords='learn NEXTJS'></meta>
+                <title>Главная страница</title>
+            </Head>
+
             <div className='navbar'>
                 <MLink
                     href='/'
