@@ -1,36 +1,12 @@
-import Head from 'next/head'
-import MLink from "../components/MLink";
+import MainContainer from "../components/MainContainer";
 
 const Index = () => {
+    const seo = 'главная страница'
+
     return (
-        <>
-            <Head>
-                <meta keywords='learn NEXTJS'></meta>
-                <title>Главная страница</title>
-            </Head>
-
-            <div className='navbar'>
-                <MLink
-                    href='/'
-                    text='Главная'
-                />
-                <MLink
-                    href='/users'
-                    text='Пользователи'
-                />
-            </div>
-
-            <h1>Главная команда</h1>
-
-            <style jsx>
-                {`
-                  .navbar {
-                      background: orange;
-                      padding: 15px;
-                  }
-                `}
-            </style>
-        </>
+        <MainContainer keywords={seo} title={seo}>
+            <h1>Главная страница</h1>
+        </MainContainer>
     )
 
 }
