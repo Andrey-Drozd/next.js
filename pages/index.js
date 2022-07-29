@@ -1,15 +1,17 @@
-import Link from "next/link";
+import MLink from "../components/MLink";
 
 const Index = () => {
     return (
         <>
             <div className='navbar'>
-                <Link href='/'>
-                    <a className='link'>Главная</a>
-                </Link>
-                <Link href='/users'>
-                    <a className='link'>Пользователи</a>
-                </Link>
+                <MLink
+                    href='/'
+                    text='Главная'
+                />
+                <MLink
+                    href='/users'
+                    text='Пользователи'
+                />
             </div>
 
             <h1>Главная команда</h1>
@@ -19,12 +21,6 @@ const Index = () => {
                   .navbar {
                       background: orange;
                       padding: 15px;
-                  }
-                  .link {
-                      text-decoration: none;
-                      color: white;
-                      font-size: 20px;
-                      margin: 10px;
                   }
                 `}
             </style>
